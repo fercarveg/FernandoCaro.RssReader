@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.WebSite", "3.WebSite", "{53A6BCDB-F11E-4B6B-80D8-FFC14FA0DB04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Library", "1.Library", "{41926651-005E-49E9-B869-8923E205747C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rssLibrary", "rssLibrary\rssLibrary.csproj", "{BE3F8C65-4541-4C64-A2D5-6E0030839C68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.DTO", "2.DTO", "{BF21FC4C-9D83-432C-905F-72294AF927A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rssDTO", "DTO\rssDTO.csproj", "{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebRSS", "http://localhost:2475", "{2A0BE840-D147-4987-B55B-EE8F57EB06EF}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{be3f8c65-4541-4c64-a2d5-6e0030839c68}|rssLibrary.dll;{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}|DTO.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2475"
+		Debug.AspNetCompiler.PhysicalPath = "WebRSS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2475\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2475"
+		Release.AspNetCompiler.PhysicalPath = "WebRSS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2475\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "WebRSS\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.ClientApplication", "4.ClientApplication", "{AAEDB506-4C26-481F-92B7-46342FC28117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfRss", "WpfRss\WpfRss.csproj", "{92332080-6FA1-4742-B516-04254A9C1EA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE3F8C65-4541-4C64-A2D5-6E0030839C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3F8C65-4541-4C64-A2D5-6E0030839C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3F8C65-4541-4C64-A2D5-6E0030839C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3F8C65-4541-4C64-A2D5-6E0030839C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF021B7-BBBD-4401-8DDF-FD088EE87E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0BE840-D147-4987-B55B-EE8F57EB06EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0BE840-D147-4987-B55B-EE8F57EB06EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0BE840-D147-4987-B55B-EE8F57EB06EF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0BE840-D147-4987-B55B-EE8F57EB06EF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{92332080-6FA1-4742-B516-04254A9C1EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92332080-6FA1-4742-B516-04254A9C1EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92332080-6FA1-4742-B516-04254A9C1EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92332080-6FA1-4742-B516-04254A9C1EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A0BE840-D147-4987-B55B-EE8F57EB06EF} = {53A6BCDB-F11E-4B6B-80D8-FFC14FA0DB04}
+		{BE3F8C65-4541-4C64-A2D5-6E0030839C68} = {41926651-005E-49E9-B869-8923E205747C}
+		{2BF021B7-BBBD-4401-8DDF-FD088EE87E19} = {BF21FC4C-9D83-432C-905F-72294AF927A8}
+		{92332080-6FA1-4742-B516-04254A9C1EA4} = {AAEDB506-4C26-481F-92B7-46342FC28117}
+	EndGlobalSection
+EndGlobal

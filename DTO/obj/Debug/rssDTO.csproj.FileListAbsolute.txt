@@ -1,0 +1,10 @@
+C:\Users\fcarovega\Desktop\RSS\WebRSS\WebRSS\DTO\bin\Debug\DTO.dll
+C:\Users\fcarovega\Desktop\RSS\WebRSS\WebRSS\DTO\bin\Debug\DTO.pdb
+C:\Users\fcarovega\Desktop\RSS\WebRSS\WebRSS\DTO\obj\Debug\rssDTO.csprojResolveAssemblyReference.cache
+C:\Users\fcarovega\Desktop\RSS\WebRSS\WebRSS\DTO\obj\Debug\DTO.dll
+C:\Users\fcarovega\Desktop\RSS\WebRSS\WebRSS\DTO\obj\Debug\DTO.pdb
+C:\Users\fcarovega\Desktop\rrs2\WebRSS\DTO\bin\Debug\DTO.dll
+C:\Users\fcarovega\Desktop\rrs2\WebRSS\DTO\bin\Debug\DTO.pdb
+C:\Users\fcarovega\Desktop\rrs2\WebRSS\DTO\obj\Debug\rssDTO.csprojResolveAssemblyReference.cache
+C:\Users\fcarovega\Desktop\rrs2\WebRSS\DTO\obj\Debug\DTO.dll
+C:\Users\fcarovega\Desktop\rrs2\WebRSS\DTO\obj\Debug\DTO.pdb

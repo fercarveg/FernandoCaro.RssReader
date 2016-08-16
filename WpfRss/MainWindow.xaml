@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfRss.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MSDN RSS" 
+        SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Name="listFeeds" Grid.Column="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=Title}"></TextBlock>
+                            <TextBlock Text="{Binding Path=PublishDate}" FontSize="9"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Background" Value="Orange"></Setter>
+                        <Setter Property="Padding" Value="9"></Setter>
+                        <Setter Property="BorderThickness" Value="1"></Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="FontWeight" Value="Bold" />
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </Style.Triggers>
+                        <Style.Resources>
+                            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Orange" Opacity="0.5"/>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Style.Resources>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+            <GridSplitter Grid.Column="1"
+                          VerticalAlignment="Stretch"
+                          Width="3"
+                          ResizeBehavior="PreviousAndNext"
+                          ResizeDirection="Columns"/>
+            <Frame Name="frmContents"
+                   Source="{Binding SelectedItem.Link, ElementName=listFeeds}"
+                   Grid.Column="2"
+                   NavigationUIVisibility="Visible">
+            </Frame>
+        </Grid>
+    </Grid>
+</Window>
